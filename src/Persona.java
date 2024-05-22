@@ -1,11 +1,9 @@
-import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 class Persona {
     private String dni;
     private String correo;
-    private String contrasena;
     private String nombre;
     private String apellidos;
     private String direccionPostal;
@@ -54,7 +52,6 @@ class Persona {
      */
     public boolean setContrasena(String contrasena) {
         if (contrasena.length() > 8) {
-            this.contrasena = contrasena;
             return true;
         } else {
             System.out.println("Contraseña no válida. Debe tener más de 8 caracteres.");
