@@ -100,4 +100,45 @@ class Persona {
                "Teléfono: " + telefono + "\n" +
                "Edad: " + edad;
     }
+
+
+    public String getDni() {
+        return dni;
+    }
+
+
+    public String getCorreo() {
+        return correo;
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+
+    public String getDireccionPostal() {
+        return direccionPostal;
+    }
+
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+
+    public int getEdad() {
+        return edad;
+    }
+    
 }
