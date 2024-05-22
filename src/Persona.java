@@ -11,7 +11,7 @@ class Persona {
     private String telefono;
     private int edad;
     
-    
+
     /** 
      * Solo permite agregar un DNI que cumpla con sus condiciones
      * @param dni
@@ -58,7 +58,7 @@ class Persona {
             return false;
         }
     }
-
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
