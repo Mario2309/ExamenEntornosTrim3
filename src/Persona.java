@@ -12,7 +12,13 @@ class Persona {
     private String codigoPostal;
     private String telefono;
     private int edad;
-
+    
+    
+    /** 
+     * Solo permite agregar un DNI que cumpla con sus condiciones
+     * @param dni
+     * @return boolean
+     */
     public boolean setDni(String dni) {
         if (dni.matches("\\d{8}")) {
             this.dni = dni;
@@ -22,7 +28,13 @@ class Persona {
             return false;
         }
     }
-
+    
+    
+    /** 
+     * Solo permite determinar correos validos
+     * @param correo
+     * @return boolean
+     */
     public boolean setCorreo(String correo) {
         String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         Pattern pattern = Pattern.compile(regex);
@@ -35,7 +47,11 @@ class Persona {
             return false;
         }
     }
-
+    /**
+     * Solo permite establecer contraseñas de mas de 8 caracteres
+     * @param contrasena
+     * @return
+     */
     public boolean setContrasena(String contrasena) {
         if (contrasena.length() > 8) {
             this.contrasena = contrasena;

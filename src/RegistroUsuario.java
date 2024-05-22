@@ -3,9 +3,12 @@ import java.util.Scanner;
 public class RegistroUsuario {
 
     public static void main(String[] args) {
+        AgregarPersona();
+    }
+
+    private static void AgregarPersona() {
         Scanner scanner = new Scanner(System.in);
         Persona persona = new Persona();
-
         System.out.print("Ingrese el DNI: ");
         while (!persona.setDni(scanner.nextLine()));
 
